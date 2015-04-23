@@ -5,7 +5,7 @@ $(document).ready(function() {
 	});
 
 	// Prevent card flip on icon click
-	$(".contact a").click(function(e){  
+	$("a").click(function(e){  
         e.stopPropagation();  
     });
 });
