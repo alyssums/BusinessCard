@@ -12,8 +12,8 @@
 		color: #3F3E40;
 	}
 	.main{
-		height: 550px;
-		width: 900px;
+		height: 100%;
+		width: 100%;
 		background-color: #FFE05B;
 		border-radius: 60px;
 		box-shadow: 0 0 1em #3F3E40;
@@ -26,31 +26,32 @@
 		padding-top: 2%;
 		padding-bottom: 0%;
 		text-align: center;
-		font-size: 4em;
+		font-size: 6vmax;
 	}
 	h1{
 		text-align: center;
-		font-size: 3em;
+		font-size: 6vmax;
 		margin-top: 0%;
 		font-weight: normal;
 	}
 	.name{
 		background-color: #FFF;
-		width: 900px;
-		height: 250px;
+		width: 100%;
+		min-height: 35%;
+		max-height: 70%;
 		margin-top: 10px;
 		text-align: center;
-		font-size: 4em;
+		font-size: 6vmax;
 		padding-top: 30px;;
 	}
 	.name p{
-		font-size: 0.5em;
+		font-size: 3vmax;
 		margin-top: 30px;
 	}
 	.back{
-		height: 550px;
-		width: 900px;
-		font-size: 1.5em;
+		height: 100%;
+		width: 100%;
+		font-size: 2vmax;
 		background-color: #FFE05B;
 		border-radius: 60px;
 		box-shadow: 0 0 1em #3F3E40;
@@ -59,66 +60,63 @@
 		-o-transform: rotateY(-180deg);
 	}
 	.skills{
-		margin-right: 5px;
+		margin-top: 3%;
 		float: right;
-		/* width: 400px; */
-		width: 875px;
-		height: 150px;
+		width: 100%;
+		height: 10%;
 	}
 	.tools{
-		margin-left: 15px;
-		width: 325px;
+		margin-left: 5%;
+		width: 35%;
 		float: left;
 	}
 	.favorites{
-		margin-left: 20px;
-		width: 350px;
+		margin-left: 5%;
+		width: 35%;
 		float: left;
 	}
 	ul{
 		margin-top: 5px;
 	}
 	.me{
-		margin-right: 20px;
-		margin-top: 40px;
+		margin-left: 0%;
+		margin-right: 0%;
+		margin-top: 5%;
 		float: left;
 		text-align: center;
 		font-size: 0.5em;
-		width: 150px;
-		height: 150px;
+		width: 25%;
+		height: 25%;
 	}
 	.me img{
-		max-height: 150px;
-		max-width: 150px;
-		border-radius: 128px;
-		margin-bottom: 10px;
+		max-height: 100%;
+		max-width: 100%;
+		border-radius: 128px
 	}
 	.about{
 		word-wrap: normal;
-		margin-top: 50px;
-		margin-left: 30px;
+		margin-top: 5%;
+		margin-left: 5%;
 		float: left;
-		/*width: 450px;*/
-		width: 650px;
-		height: 100px;
+		max-width: 70%;
+		max-height: 10%
 	}
 	.contact{
 		width: 10%;
 		float: left;
-		margin-top: 5%;
 		margin-left: 5%;
 	}
 	.contact img{
 		margin-top: 5%;
-		max-height: 60%;
-		max-width: 60%;
+		max-height: 70%;
+		max-width: 70%;
 	}
 	.card{
 		margin: auto;
   		position: absolute;
   		top: 0; left: 0; bottom: 0; right: 0;
-		height: 550px;
-		width: 900px;
+		max-width: 75%;
+		max-height: 80%;
 		-webkit-transition: all 1s ease-in-out;
 		-webkit-perspective: 1000;
 		-webkit-transform-style: preserve-3d;
@@ -149,7 +147,39 @@
 		font-size: 4vmax;
 		margin: auto;
   		position: absolute;
-  		left: 0; right: 0; bottom: 20;
+  		left: 0; right: 0; bottom: 15;
   		height: 5%;
+	}
+}
+@media (min-width: 700px) and (max-width: 1000px){
+	header, h1{
+		font-size: 8vmax;
+	}
+	.name{
+		font-size: 8vmax;
+	}
+	.name p{
+		font-size: 4vmax;
+	}
+	.back{
+		font-size: 2.5vmax;
+	}
+	.skills{
+		margin-top: 3%;
+	}
+	.me img{
+		max-height: 80%;
+		max-width: 80%;
+	}
+	.contact img{
+		max-width: 90%;
+		max-height: 90%;
+	}
+	.contact{
+		margin-right: 0%;
+		margin-left: 2.5%;
+	}
+	.favorites{
+		margin-right: 0%;
 	}
 }
